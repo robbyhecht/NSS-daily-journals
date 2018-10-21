@@ -1,34 +1,54 @@
 
-const journalEntries = [
-  {
-      concept: "Array methods",
-      date: "07/24/2018",
-      entry: "We learned about array methods, but only forEach made sense",
-      mood: "Ok"
+// CONSTRUCTION ZONE... WORK IN PROGRESS 💀
+
+// empty entries array
+const journalEntries = []
+// make added article tag into variable for dom placement
+let entryLog = document.getElementsByClassName("entryLog");
+// make inputs into variables
+  let journalDate = document.getElementById("journalDate")
+  let journalConcept = document.getElementById("journalConcept")
+  let journalMood = document.getElementById("journalMood")
+  let journalEntry = document.getElementById("journalEntry")
+
+  // and create a new object with them
+  let recentEntry = {
+    concept: journalConcept.value,
+    entry: journalEntry.value,
+    mood: journalMood.value,
+    date: journalDate.value
   }
-]
+  journalEntries.unshift(recentEntry)
 
-/*
-  Purpose: To create, and return, a string template that
-  represents a single journal entry object as HTML
+console.log(journalEntries)
 
-  Arguments: journalEntry (object)
-*/
-const makeJournalEntryComponent = (journalEntry) => {
-  // Create your own HTML structure for a journal entry
-  return `
-  
+// ??
+
+let makeJournalEntry = (journalEntries) => {
+  for (i=0; i<journalEntries.length; i++) {
+    let collection = `
+    <h3>${journalEntries[i].concept}</h3>
+    <p>${journalEntries[i].entry}</p>
+    <p>${journalEntries[i].mood}</p>
+    <p>${journalEntries[i].date}</p>
   `
+  }
+  return collection;
 }
 
-/*
-    Purpose: To render all journal entries to the DOM
+let entryObject = document.createElement("div");
+let insert = () => entryObject.appendChild(collection);
 
-    Arguments: entries (array of objects)
-*/
-const renderJournalEntries = (entries) => {
 
-}
 
-// Invoke the render function
-renderJournalEntries(journalEntries)
+// /*
+//     Purpose: To render all journal entries to the DOM
+
+//     Arguments: entries (array of objects)
+// */
+// const renderJournalEntries = (entries) => {
+
+// }
+
+// // Invoke the render function
+// renderJournalEntries(journalEntries)
