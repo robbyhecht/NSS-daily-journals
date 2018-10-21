@@ -1,4 +1,58 @@
-fieldset {
+body {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: antiquewhite;
+  color: #222;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 40px;
+}
+
+hr {
+  margin: 50px 10%;
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+.form {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  justify-content: center;
+  background-color: whitesmoke;
+  margin: 1px 2em;
+  padding: 10px;  
+}
+
+.input {
+  align-content: space-around;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 500px;
+}
+
+.record {
+  display: flex;
+  justify-content: center;
+}
+
+.label {
+  padding-bottom: 5px;
 }
