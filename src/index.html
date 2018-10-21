@@ -23,18 +23,18 @@
       <!-- concepts -->
     <fieldset>
       <label for="journalConcepts">Concepts covered</label>
-      <input type="text" name="" id="">
+      <input type="text" name="journalConcept" id="journalConcept">
       <br>
     </fieldset>
       <!-- entry -->
     <fieldset>
       <label for="journalEntry">Journal entry</label>
-      <textarea name="journalEntry" id="" cols="60" rows="2"></textarea>
+      <textarea name="journalEntry" id="journalEntry" cols="60" rows="2"></textarea>
     </fieldset>
       <!-- mood -->
     <fieldset>
       <label for="journalMood">Mood for the day</label>
-      <select name="journalMood" id="" value=sad>
+      <select name="journalMood" id="journalMood" value=sad>
         <option value="joyful">Joyful</option>
         <option value="happy">Happy</option>
         <option value="sad">Sad</option>
@@ -48,6 +48,11 @@
     </fieldset>
 
   </form>
+  <article class="entryLog">
 
+  </article>
+
+
+  <script src="scripts/journal.js"></script>
 </body>
 </html>
