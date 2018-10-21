@@ -10,31 +10,33 @@
 
 <body>
 
-  <h1>Daily Journal</h1>
+  <h1>DAILY JOURNAL</h1>
 
-  <form action="">
+  <hr>
+
+  <form action="" class="form">
 
       <!-- date -->
     <fieldset>
-      <label for="journalDate">Date of entry</label>
-      <input type="date" name="journalDate" id="journalDate">
+      <label for="journalDate" class="label">Date of entry</label>
+      <input type="date" name="journalDate" id="journalDate" class="input">
       <br>
     </fieldset>
       <!-- concepts -->
     <fieldset>
-      <label for="journalConcepts">Concepts covered</label>
-      <input type="text" name="journalConcept" id="journalConcept">
+      <label for="journalConcepts" class="label">Concepts covered</label>
+      <input type="text" name="journalConcept" id="journalConcept" class="input">
       <br>
     </fieldset>
       <!-- entry -->
-    <fieldset>
-      <label for="journalEntry">Journal entry</label>
-      <textarea name="journalEntry" id="journalEntry" cols="60" rows="2"></textarea>
+    <fieldset id="journalFieldset">
+      <label for="journalEntry" class="label">Journal entry</label>
+      <textarea name="journalEntry" id="journalEntry" cols="60" rows="5" class="input"></textarea>
     </fieldset>
       <!-- mood -->
     <fieldset>
-      <label for="journalMood">Mood for the day</label>
-      <select name="journalMood" id="journalMood" value=sad>
+      <label for="journalMood" class="label">Mood for the day</label>
+      <select name="journalMood" id="journalMood" class="input" value=sad>
         <option value="joyful">Joyful</option>
         <option value="happy">Happy</option>
         <option value="sad">Sad</option>
@@ -44,10 +46,13 @@
     </fieldset>
       <!-- record button -->
     <fieldset>
-      <input type="submit" value="Record Journal Entry">
+      <span class="record">
+        <input type="submit" value="Record Journal Entry">
+      </span>
     </fieldset>
 
   </form>
+  <hr>
   <article class="entryLog">
 
   </article>
