@@ -1,25 +1,8 @@
 
-// -- Still need to make work with input data --
 
-// Array of existing journal entries
-const journalEntries = [
-  {
-    date: "10/21/2018",
-    concept: "Functions",
-    entry: "Freakin functions. So functional!",
-    mood: "getting there"
-  },
-  {
-      date: "10/20/2018",
-      concept: "Arrays",
-      entry: "We learned about different array methods today. forEach made sense FINALLY",
-      mood: "killer"
-  }
-];
-
-// Make a variable for DOM placement from the empty article tag in index.html -- this is where the journal entries will appear in the browser.
-const entryLog = document.querySelector(".entryLog");
+// Make a variable for DOM placement from the empty article tag in index.html
 // Q: why doesn't this work with getElementsByClassName?
+const entryLog = document.querySelector(".entryLog");
 
 
 // This function reformats the array's objects into user-friendly html for display in the DOM
@@ -42,30 +25,12 @@ addJournalEntry = (entries) => {
   });
 }
 
-// Call the function to activate the journal!
-addJournalEntry(journalEntries);
+// Fetch the array from the API and run it through the functions above to post objects to the dom
 
-
-
-// // make inputs into variables
-//   let journalDate = document.querySelector("#journalDate")
-//   let journalConcept = document.querySelector("#journalConcept")
-//   let journalMood = document.querySelector("#journalMood")
-//   let journalEntry = document.querySelector("#journalEntry")
-
-//   // and create a new object with them
-//   let recentEntry = {
-//     concept: journalConcept.value,
-//     entry: journalEntry.value,
-//     mood: journalMood.value,
-//     date: journalDate.value
-//   }
-//   journalEntries.unshift(recentEntry)
-
-// console.log(journalEntries)
-
-// // ??
-
-// let entryObject = document.createElement("div");
-// let insert = () => entryObject.appendChild(collection);
-
+fetch("http://localhost:8088/entries") // Fetch from the API
+    .then(entry => entry.json())  // Parse as JSON
+    .then(entries => {
+      createJournalEntry(entries)
+        // What should happen when we finally have the array?
+      addJournalEntry(entries)
+    })
