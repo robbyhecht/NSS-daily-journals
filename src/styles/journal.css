@@ -3,12 +3,17 @@ body {
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: antiquewhite;
-  color: #222;
+  color: #333;
 }
 
 h1 {
   font-weight: bold;
-  margin: 40px;
+  margin: 60px 15% 50px;
+  background-color: whitesmoke;
+  border: 1px solid #222;  
+  padding: 60px 10px;
+  border-radius: 4px;
+  font-size: 3rem;
 }
 
 hr {
@@ -36,8 +41,9 @@ fieldset {
   align-content: space-around;
   justify-content: center;
   background-color: whitesmoke;
-  margin: 1px 2em;
-  padding: 10px;  
+  margin: 0px 20%;
+  padding: 20px 0px;
+  border-radius: 4px;
 }
 
 .input {
@@ -56,3 +62,15 @@ fieldset {
 .label {
   padding-bottom: 5px;
 }
+
+.userEntry {
+  border: 1px solid #222;
+  background-color: whitesmoke;
+  margin: 0px 10%;
+  padding: 20px 10px;
+  border-radius: 4px;
+}
+
+/* .visibleWords {
+ opacity: .8;
+} */
