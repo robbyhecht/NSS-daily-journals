@@ -5,3 +5,9 @@ API.getJournalEntries()
 .then(entries =>
   renderDom.addJournalEntry(entries)
 )
+
+let recordEntryButton = document.getElementById("recordEntryButton")
+recordEntryButton.addEventListener("click", function() {
+  
+})
+
