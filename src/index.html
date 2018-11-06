@@ -15,12 +15,16 @@
   <hr>
 
   <div class="input--body">
+
     <h2>Date of Entry</h2>
     <input type="date" id="journalDate">
+
     <h2>Concepts Covered</h2>
     <input type="text" id="journalConcept">
+
     <h2>Journal Entry</h2>
     <textarea name="journalEntry" id="journalEntry" cols="60" rows="5" class="input"></textarea>
+
     <h2>Mood for the Day</h2>
     <select name="journalMood" id="journalMood" class="input" value=sad>
       <option value="joyful">Joyful</option>
@@ -29,11 +33,13 @@
       <option value="miserable">Miserable</option>
       <option value="meh">Meh</option>
     </select>
+
     <div>
       <span class="record">
         <input type="submit" value="Record Journal Entry" id="recordEntryButton">
       </span>
     </div>
+
   </div>
 
   <!-- <form action="" class="form"> -->
@@ -82,7 +88,7 @@
 
   <script src="scripts/entryComponent.js"></script>
   <script src="scripts/entriesDOM.js"></script>
-  <script src="scripts/data.js"></script>
+  <script src="scripts/api-data.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 </html>
