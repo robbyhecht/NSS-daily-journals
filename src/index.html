@@ -27,11 +27,14 @@
 
     <h2>Mood for the Day</h2>
     <select name="journalMood" id="journalMood" class="input" value=sad>
-      <option value="joyful">Joyful</option>
-      <option value="happy">Happy</option>
+      <option value="glad">Glad</option>
+      <option value="ashamed">Ashamed</option>
+      <option value="afraid">Afraid</option>
+      <option value="lonely">Lonely</option>
       <option value="sad">Sad</option>
-      <option value="miserable">Miserable</option>
-      <option value="meh">Meh</option>
+      <option value="angry">Angry</option>
+      <option value="guilty">Guilty</option>
+      <option value="hurt">Hurt</option>
     </select>
 
     <div>
@@ -40,7 +43,27 @@
       </span>
     </div>
 
-  </div>
+    <form>
+      <fieldset>
+          <legend>Filter Journal Entries by Mood</legend>
+          <input type="radio" name="mood" value="glad" id="glad">
+          <label for="glad">Glad</label>
+          <input type="radio" name="mood" value="ashamed" id="ashamed">
+          <label for="ashamed">Ashamed</label>
+          <input type="radio" name="mood" value="afraid" id="afraid">
+          <label for="afraid">Afraid</label>
+          <input type="radio" name="mood" value="lonely" id="lonely">
+          <label for="lonely">Lonely</label>
+          <input type="radio" name="mood" value="sad" id="sad">
+          <label for="sad">Sad</label>
+          <input type="radio" name="mood" value="angry" id="angry">
+          <label for="angry">Angry</label>
+          <input type="radio" name="mood" value="guilty" id="guilty">
+          <label for="guilty">Guilty</label>
+          <input type="radio" name="mood" value="hurt" id="hurt">
+          <label for="hurt">Hurt</label>
+      </fieldset>
+  </form>
 
   <!-- <form action="" class="form"> -->
 
