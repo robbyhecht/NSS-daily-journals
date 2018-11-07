@@ -14,27 +14,55 @@
 
   <hr>
 
-  <form action="" class="form">
+  <div class="input--body">
+
+    <h2>Date of Entry</h2>
+    <input type="date" id="journalDate">
+
+    <h2>Concepts Covered</h2>
+    <input type="text" id="journalConcept">
+
+    <h2>Journal Entry</h2>
+    <textarea name="journalEntry" id="journalEntry" cols="60" rows="5" class="input"></textarea>
+
+    <h2>Mood for the Day</h2>
+    <select name="journalMood" id="journalMood" class="input" value=sad>
+      <option value="joyful">Joyful</option>
+      <option value="happy">Happy</option>
+      <option value="sad">Sad</option>
+      <option value="miserable">Miserable</option>
+      <option value="meh">Meh</option>
+    </select>
+
+    <div>
+      <span class="record">
+        <input type="submit" value="Record Journal Entry" id="recordEntryButton">
+      </span>
+    </div>
+
+  </div>
+
+  <!-- <form action="" class="form"> -->
 
       <!-- date -->
-    <fieldset class="visibleWords">
+    <!-- <fieldset class="visibleWords">
       <label for="journalDate" class="label">Date of entry</label>
       <input type="date" name="journalDate" id="journalDate" class="input">
       <br>
-    </fieldset>
+    </fieldset> -->
       <!-- concepts -->
-    <fieldset class="visibleWords">
+    <!-- <fieldset class="visibleWords">
       <label for="journalConcepts" class="label">Concepts covered</label>
       <input type="text" name="journalConcept" id="journalConcept" class="input">
       <br>
-    </fieldset>
+    </fieldset> -->
       <!-- entry -->
-    <fieldset id="journalFieldset" class="visibleWords">
+    <!-- <fieldset id="journalFieldset" class="visibleWords">
       <label for="journalEntry" class="label">Journal entry</label>
       <textarea name="journalEntry" id="journalEntry" cols="60" rows="5" class="input"></textarea>
-    </fieldset>
+    </fieldset> -->
       <!-- mood -->
-    <fieldset class="visibleWords">
+    <!-- <fieldset class="visibleWords">
       <label for="journalMood" class="label">Mood for the day</label>
       <select name="journalMood" id="journalMood" class="input" value=sad>
         <option value="joyful">Joyful</option>
@@ -43,23 +71,25 @@
         <option value="miserable">Miserable</option>
         <option value="meh">Meh</option>
       </select>
-    </fieldset>
+    </fieldset> -->
       <!-- record button -->
-    <fieldset class="visibleWords">
+    <!-- <fieldset class="visibleWords">
       <span class="record">
-        <input type="submit" value="Record Journal Entry">
+        <input type="submit" value="Record Journal Entry" id="recordEntryButton">
       </span>
     </fieldset>
 
-  </form>
+  </form> -->
+
   <hr>
   <article class="entryLog" class="visibleWords">
 
   </article>
 
-  <script src="scripts/entryComponent.js"></script>
-  <script src="scripts/entriesDOM.js"></script>
-  <script src="scripts/data.js"></script>
-  <script src="scripts/journal.js"></script>
+  <script src="scripts/entryComponentHtml.js"></script>
+  <script src="scripts/api-data.js"></script>
+  <script src="scripts/entriesToDOM.js"></script>
+  <script src="scripts/entry-form.js"></script>
+  <script src="scripts/main.js"></script>
 </body>
 </html>
