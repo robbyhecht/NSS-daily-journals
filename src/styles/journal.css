@@ -72,6 +72,16 @@ hr {
   border-radius: 4px;
 }
 
-/* .visibleWords {
- opacity: .8;
-} */
+#journalDate {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+#journalConcept {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#journalMood {
+  width: 100px;
+}

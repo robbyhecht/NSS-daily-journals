@@ -1,22 +1,46 @@
 {
   "entries": [
     {
+      "id": 1,
       "date": "10/21/2018",
       "concept": "Functions",
       "entry": "Freakin functions. So functional!",
       "mood": "meh"
     },
     {
-        "date": "10/20/2018",
-        "concept": "Arrays",
-        "entry": "We learned about different array methods today. forEach finally made sense",
-        "mood": "joyful"
+      "id": 2,
+      "date": "10/20/2018",
+      "concept": "Arrays",
+      "entry": "We learned about different array methods today. forEach finally made sense",
+      "mood": "joyful"
     },
     {
+      "id": 3,
       "date": "10/22/18",
       "concept": "Grunt",
       "entry": "A lot of information and setup but seems like it will make things easier in the long run.",
-      "mood": "happy" 
+      "mood": "happy"
+    },
+    {
+      "date": "",
+      "concept": "",
+      "entry": "",
+      "mood": "joyful",
+      "id": 4
+    },
+    {
+      "date": "2018-11-14",
+      "concept": "",
+      "entry": "cecef",
+      "mood": "joyful",
+      "id": 5
+    },
+    {
+      "date": "",
+      "concept": "",
+      "entry": "cecr",
+      "mood": "joyful",
+      "id": 6
     }
   ]
 }

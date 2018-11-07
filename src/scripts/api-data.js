@@ -8,7 +8,9 @@ const API = {
     .then((entryData) => entryData)
   },
 
+
   saveJournalEntries (entry) {
+    console.log(entry)
     return fetch("http://localhost:8088/entries", {
       method: "POST",
       headers: {
@@ -16,10 +18,9 @@ const API = {
       },
       body: JSON.stringify(entry)
     })
-    .then((data) => data.json())
-    .then(data => data)
+    .then((entryDataJson) => entryDataJson.json())
+    .then((entryData) => entryData)
   }
-
 }
 
 
