@@ -87,3 +87,8 @@ hr {
 #journalMood {
   width: 100px;
 }
+
+.moodRadio {
+  margin-left: 20px;
+  margin-right: 20px;
+}

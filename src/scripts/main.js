@@ -30,3 +30,18 @@ recordEntryButton.addEventListener("click", function() {
     .then(entries => renderDom.addJournalEntry(entries))
   }
 })
+
+// ---
+
+let moodButton = document.getElementsByName("moodButton")
+moodButton.forEach((button) => {
+  moodButton.addEventListener("click", )
+})
+
+// Now, you could attach the event listeners to each individually. You could also use the document.getElementsByName() method, and a forEach() to add them more dynamically.
+
+// To get the selected mood, you need to look at the value property of the radio button that was clicked. When you click on any DOM element, that element becomes the target of the click event. You can access the element, and its value with the code below.
+
+// radioButton.addEventListener("click", event => {
+//     const mood = event.target.value
+// })

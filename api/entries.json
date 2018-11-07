@@ -5,21 +5,21 @@
       "date": "10/21/2018",
       "concept": "Functions",
       "entry": "Freakin functions. So functional!",
-      "mood": "meh"
+      "mood": "ashamed"
     },
     {
       "id": 2,
       "date": "10/20/2018",
       "concept": "Arrays",
       "entry": "We learned about different array methods today. forEach finally made sense",
-      "mood": "joyful"
+      "mood": "glad"
     },
     {
       "id": 3,
       "date": "10/22/18",
       "concept": "Grunt",
       "entry": "A lot of information and setup but seems like it will make things easier in the long run.",
-      "mood": "happy"
+      "mood": "lonely"
     }
   ]
 }
