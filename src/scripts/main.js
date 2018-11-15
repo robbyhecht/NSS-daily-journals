@@ -31,37 +31,7 @@ recordEntryButton.addEventListener("click", function() {
   }
 })
 
-// Add event listeners to radio buttons to choose a mood
+// filter entries by mood selection
 
-let moodButton = document.getElementsByName("moodButton")
-moodButton.forEach((button) => {
-  button.addEventListener("click", event => {
-    let mood = event.target.value;
-    console.log(mood)
-  })
-})
+moodFilter()
 
-
-
-
-
-API.saveJournalEntries()
-
-
-
-// Searching in arraySection
-// Following example uses filter() to filter array content based on search criteria
-
-// var fruits = ['apple', 'banana', 'grapes', 'mango', 'orange'];
-
-// /**
-//  * Array filters items based on search criteria (query)
-//  */
-// function filterItems(query) {
-//   return fruits.filter(function(el) {
-//       return el.toLowerCase().indexOf(query.toLowerCase()) > -1;
-//   })
-// }
-
-// console.log(filterItems('ap')); // ['apple', 'grapes']
-// console.log(filterItems('an')); // ['banana', 'mango', 'orange']
