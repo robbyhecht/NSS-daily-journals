@@ -30,3 +30,8 @@ recordEntryButton.addEventListener("click", function() {
     .then(entries => renderDom.addJournalEntry(entries))
   }
 })
+
+// filter entries by mood selection
+
+moodFilter()
+

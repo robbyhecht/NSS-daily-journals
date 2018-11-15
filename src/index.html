@@ -14,6 +14,8 @@
 
   <hr>
 
+  <!-- input fields -->
+
   <div class="input--body">
 
     <h2>Date of Entry</h2>
@@ -27,11 +29,14 @@
 
     <h2>Mood for the Day</h2>
     <select name="journalMood" id="journalMood" class="input" value=sad>
-      <option value="joyful">Joyful</option>
-      <option value="happy">Happy</option>
+      <option value="glad">Glad</option>
+      <option value="ashamed">Ashamed</option>
+      <option value="afraid">Afraid</option>
+      <option value="lonely">Lonely</option>
       <option value="sad">Sad</option>
-      <option value="miserable">Miserable</option>
-      <option value="meh">Meh</option>
+      <option value="angry">Angry</option>
+      <option value="guilty">Guilty</option>
+      <option value="hurt">Hurt</option>
     </select>
 
     <div>
@@ -40,56 +45,45 @@
       </span>
     </div>
 
-  </div>
+    <!-- mood filter radio buttons -->
 
-  <!-- <form action="" class="form"> -->
-
-      <!-- date -->
-    <!-- <fieldset class="visibleWords">
-      <label for="journalDate" class="label">Date of entry</label>
-      <input type="date" name="journalDate" id="journalDate" class="input">
-      <br>
-    </fieldset> -->
-      <!-- concepts -->
-    <!-- <fieldset class="visibleWords">
-      <label for="journalConcepts" class="label">Concepts covered</label>
-      <input type="text" name="journalConcept" id="journalConcept" class="input">
-      <br>
-    </fieldset> -->
-      <!-- entry -->
-    <!-- <fieldset id="journalFieldset" class="visibleWords">
-      <label for="journalEntry" class="label">Journal entry</label>
-      <textarea name="journalEntry" id="journalEntry" cols="60" rows="5" class="input"></textarea>
-    </fieldset> -->
-      <!-- mood -->
-    <!-- <fieldset class="visibleWords">
-      <label for="journalMood" class="label">Mood for the day</label>
-      <select name="journalMood" id="journalMood" class="input" value=sad>
-        <option value="joyful">Joyful</option>
-        <option value="happy">Happy</option>
-        <option value="sad">Sad</option>
-        <option value="miserable">Miserable</option>
-        <option value="meh">Meh</option>
-      </select>
-    </fieldset> -->
-      <!-- record button -->
-    <!-- <fieldset class="visibleWords">
-      <span class="record">
-        <input type="submit" value="Record Journal Entry" id="recordEntryButton">
-      </span>
-    </fieldset>
-
-  </form> -->
+    <form>
+      <fieldset class="moodRadio">
+          <legend>Filter Journal Entries by Mood</legend>
+          <input type="radio" name="moodButton" value="glad" id="glad">
+          <label for="glad">Glad</label>
+          <input type="radio" name="moodButton" value="ashamed" id="ashamed">
+          <label for="ashamed">Ashamed</label>
+          <input type="radio" name="moodButton" value="afraid" id="afraid">
+          <label for="afraid">Afraid</label>
+          <input type="radio" name="moodButton" value="lonely" id="lonely">
+          <label for="lonely">Lonely</label>
+          <input type="radio" name="moodButton" value="sad" id="sad">
+          <label for="sad">Sad</label>
+          <input type="radio" name="moodButton" value="angry" id="angry">
+          <label for="angry">Angry</label>
+          <input type="radio" name="moodButton" value="guilty" id="guilty">
+          <label for="guilty">Guilty</label>
+          <input type="radio" name="moodButton" value="hurt" id="hurt">
+          <label for="hurt">Hurt</label>
+      </fieldset>
+  </form>
 
   <hr>
+
+  <!-- entries enter dom here -->
+
   <article class="entryLog" class="visibleWords">
 
   </article>
+
+  <!--  -->
 
   <script src="scripts/entryComponentHtml.js"></script>
   <script src="scripts/api-data.js"></script>
   <script src="scripts/entriesToDOM.js"></script>
   <script src="scripts/entry-form.js"></script>
+  <script src="scripts/mood-filter.js"></script>
   <script src="scripts/main.js"></script>
 </body>
 </html>
