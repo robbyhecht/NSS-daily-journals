@@ -31,17 +31,37 @@ recordEntryButton.addEventListener("click", function() {
   }
 })
 
-// ---
+// Add event listeners to radio buttons to choose a mood
 
 let moodButton = document.getElementsByName("moodButton")
 moodButton.forEach((button) => {
-  moodButton.addEventListener("click", )
+  button.addEventListener("click", event => {
+    let mood = event.target.value;
+    console.log(mood)
+  })
 })
 
-// Now, you could attach the event listeners to each individually. You could also use the document.getElementsByName() method, and a forEach() to add them more dynamically.
 
-// To get the selected mood, you need to look at the value property of the radio button that was clicked. When you click on any DOM element, that element becomes the target of the click event. You can access the element, and its value with the code below.
 
-// radioButton.addEventListener("click", event => {
-//     const mood = event.target.value
-// })
+
+
+API.saveJournalEntries()
+
+
+
+// Searching in arraySection
+// Following example uses filter() to filter array content based on search criteria
+
+// var fruits = ['apple', 'banana', 'grapes', 'mango', 'orange'];
+
+// /**
+//  * Array filters items based on search criteria (query)
+//  */
+// function filterItems(query) {
+//   return fruits.filter(function(el) {
+//       return el.toLowerCase().indexOf(query.toLowerCase()) > -1;
+//   })
+// }
+
+// console.log(filterItems('ap')); // ['apple', 'grapes']
+// console.log(filterItems('an')); // ['banana', 'mango', 'orange']
