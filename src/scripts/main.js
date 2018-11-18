@@ -1,8 +1,13 @@
 
+import API from "./api-data"
+import RenderDom from "./entriesToDOM"
+import Entry from "./entry-form"
+import Mood from "./mood-filter"
+
 //1. Call the API object's function  2. Run the entries through the existing create and add functions  3. Creates and adds html to DOM
 
 API.getJournalEntries()
-.then(entries => renderDom.addJournalEntry(entries))
+.then(entries => RenderDom.addJournalEntry(entries))
 
 let recordEntryButton = $("#recordEntryButton")
 recordEntryButton.click(function() {
@@ -27,13 +32,13 @@ recordEntryButton.click(function() {
       console.log("new entry saved", data)
       return API.getJournalEntries()
     })
-    .then(entries => renderDom.addJournalEntry(entries))
+    .then(entries => RenderDom.addJournalEntry(entries))
   }
 })
 
 // filter entries by mood selection
 
-moodFilter()
+Mood.moodFilter()
 
 // // non jquery refactored code:
 

@@ -1,13 +1,12 @@
 
 // Make an object that holds the API call
-const API = {
+export default class API {
 
   getJournalEntries () {
     return fetch("http://localhost:8088/entries")
     .then(entryDataJson => entryDataJson.json())
     .then((entryData) => entryData)
-  },
-
+  }
 
   saveJournalEntries (entry) {
     console.log(entry)

@@ -1,4 +1,5 @@
-class Entry {
+import API from "./api-data"
+export default class Entry {
 
   constructor(props) {
     this.date = props.date

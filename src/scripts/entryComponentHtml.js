@@ -1,5 +1,5 @@
 // This function reformats the array's objects into user-friendly html for display in the DOM
-const domManager = {
+export default class DomManager {
   createJournalEntry (entryObject) {
     let htmlContent = `
       <section class="userEntry" class="visibleWords"> 
