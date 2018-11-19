@@ -1,6 +1,6 @@
 // This function reformats the array's objects into user-friendly html for display in the DOM
-export default class DomManager {
-  createJournalEntry (entryObject) {
+const DomManager = {
+  createJournalEntry: (entryObject) => {
     let htmlContent = `
       <section class="userEntry" class="visibleWords"> 
         <h2>${entryObject.concept}</h2>
@@ -12,6 +12,8 @@ export default class DomManager {
     return htmlContent;
   }
 }
+
+export {DomManager}
 
 // old function composition:
 

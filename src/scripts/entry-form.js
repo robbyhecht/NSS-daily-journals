@@ -1,4 +1,4 @@
-import API from "./api-data"
+import {API} from "./api-data"
 export default class Entry {
 
   constructor(props) {

@@ -20,6 +20,13 @@
       "concept": "Grunt",
       "entry": "A lot of information and setup but seems like it will make things easier in the long run.",
       "mood": "lonely"
+    },
+    {
+      "date": "2018-11-29",
+      "concept": "Salmon Fishing",
+      "entry": "Hi, I like to eat.",
+      "mood": "hurt",
+      "id": 4
     }
   ]
 }

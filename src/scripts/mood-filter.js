@@ -1,9 +1,9 @@
-import API from "./api-data"
-import RenderDom from "./entriesToDOM"
+import {API} from "./api-data"
+import {RenderDom} from "./entriesToDOM"
 
 // Add event listeners to radio buttons to choose a mood
 export default class Mood {
-    moodFilter() {
+    static moodFilter() {
     let moodButton = document.getElementsByName("moodButton")
     moodButton.forEach((button) => {
       button.addEventListener("click", event => {

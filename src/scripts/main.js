@@ -1,6 +1,6 @@
 
-import API from "./api-data"
-import RenderDom from "./entriesToDOM"
+import {API} from "./api-data"
+import {RenderDom} from "./entriesToDOM"
 import Entry from "./entry-form"
 import Mood from "./mood-filter"
 

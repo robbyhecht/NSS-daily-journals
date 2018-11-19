@@ -1,10 +1,10 @@
-import DomManager from "./entryComponentHtml"
+import {DomManager} from "./entryComponentHtml"
 
 // Make a variable for DOM placement from the empty article tag in index.html
 
 // For each object in the array (aka each journal entry), transform the entry into html with the createJournalEntry function above and add it to the DOM's entryLog article
-export default class RenderDom {
-  addJournalEntry (entries) {
+const RenderDom = {
+  addJournalEntry: (entries) => {
     const entryLog = document.querySelector(".entryLog");
     entryLog.innerHTML = ""
     entries.forEach(entry => {
@@ -13,6 +13,8 @@ export default class RenderDom {
     });
   }
 }
+
+export {RenderDom}
 
 // Replace element.addEventListener("click") with $("selector").click()
 // Replace document.getElementById("id") with $("#id")
