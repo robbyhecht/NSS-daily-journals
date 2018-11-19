@@ -1,15 +1,20 @@
+import {API} from "./api-data"
+import {RenderDom} from "./entriesToDOM"
+
 // Add event listeners to radio buttons to choose a mood
-function moodFilter() {
-  let moodButton = document.getElementsByName("moodButton")
-  moodButton.forEach((button) => {
-    button.addEventListener("click", event => {
-      let moodType = event.target.value;
-      console.log(moodType)
-// Call filter function to display only selected entries and render to dom
-      API.getJournalEntries()
-      .then(entries => entries.filter((currentEntry)=> currentEntry.mood === moodType)).then(filteredEntries => renderDom.addJournalEntry(filteredEntries))
+export default class Mood {
+    static moodFilter() {
+    let moodButton = document.getElementsByName("moodButton")
+    moodButton.forEach((button) => {
+      button.addEventListener("click", event => {
+        let moodType = event.target.value;
+        console.log(moodType)
+  // Call filter function to display only selected entries and render to dom
+        API.getJournalEntries()
+        .then(entries => entries.filter((currentEntry)=> currentEntry.mood === moodType)).then(filteredEntries => RenderDom.addJournalEntry(filteredEntries))
+      })
     })
-  })
+  }
 }
 
 // DID NOT JQUERY THIS PAGE BC COULDN'T MAKE IT WORK

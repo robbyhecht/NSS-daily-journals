@@ -2,14 +2,13 @@
 // Make an object that holds the API call
 const API = {
 
-  getJournalEntries () {
+  getJournalEntries: ()=> {
     return fetch("http://localhost:8088/entries")
     .then(entryDataJson => entryDataJson.json())
-    .then((entryData) => entryData)
+    // .then((entryData) => entryData)
   },
 
-
-  saveJournalEntries (entry) {
+  saveJournalEntries: (entry)=> {
     console.log(entry)
     return fetch("http://localhost:8088/entries", {
       method: "POST",
@@ -22,6 +21,8 @@ const API = {
     .then((entryData) => entryData)
   }
 }
+
+export {API}
 
 
 
